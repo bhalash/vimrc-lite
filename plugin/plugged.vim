@@ -57,7 +57,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 
 " Nice fast background grepping.
-Plug 'yegappan/grep'
+Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
 " Enforce .editorconfig.
 Plug 'editorconfig/editorconfig-vim'
