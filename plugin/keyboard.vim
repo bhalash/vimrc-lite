@@ -62,6 +62,9 @@ nnoremap <silent><leader>cj :%s/[‘’]/'/e \| %s/[“”]/"/e<CR>
 " Open terminal as full-height vertical split.
 nnoremap <leader>t :vert ter<CR>
 
+" Break up long Typescript import lines and format result.
+nnoremap <leader>im :s/\([{,]\)\s/\1\r  / <Bar> :s/\s}/\r}/<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

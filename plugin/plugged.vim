@@ -33,6 +33,7 @@ Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
 " Auto pair brackets, like.
 Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
 
 " Toggle comments.
 Plug 'tomtom/tcomment_vim'
