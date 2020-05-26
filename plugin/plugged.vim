@@ -33,7 +33,7 @@ Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
 " Auto pair brackets, like.
 Plug 'jiangmiao/auto-pairs'
-Plug 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag', { 'for': 'html' }
 
 " Toggle comments.
 Plug 'tomtom/tcomment_vim'
@@ -58,7 +58,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 
 " Nice fast background grepping.
-Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
+Plug 'mhinz/vim-grepper'
+Plug 'haya14busa/vim-asterisk'
 
 " Enforce .editorconfig.
 Plug 'editorconfig/editorconfig-vim'
