@@ -53,6 +53,7 @@ Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
 
 " File finder.
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 " Linting and tab completion.
 Plug 'ervandew/supertab'

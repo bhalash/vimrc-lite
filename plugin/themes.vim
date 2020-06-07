@@ -46,6 +46,8 @@ endfunction
 function! s:hybrid_patch()
   call s:gitgutter_reset()
   let g:airline_theme = 'hybrid'
+  hi Visual guibg=#c0c0c0 guifg=#000000 ctermbg=0 ctermfg=7
+  hi CursorLine ctermbg=235 guibg=#4e4e4e
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
