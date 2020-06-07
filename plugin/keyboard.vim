@@ -65,6 +65,9 @@ nnoremap <leader>t :vert ter<CR>
 " Break up long Typescript import lines and format result.
 nnoremap <leader>im :s/\([{,]\)\s/\1\r  / <Bar> :s/\s}/\r}/<CR>
 
+" Take visual selection and search with it.
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
