@@ -23,7 +23,9 @@ Plug 'unblevable/quick-scope'
 Plug 'airblade/vim-rooter'
 
 " Quickly change wrapping characters with cs<char>.
-Plug 'tpope/vim-surround'
+Plug 'christoomey/vim-sort-motion'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
 
 " Case-insensitive replacement
 Plug 'tpope/vim-abolish'
@@ -46,14 +48,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
 
 " Colorscheme.
-Plug 'w0ng/vim-hybrid'
+Plug 'rafi/awesome-vim-colorschemes'
 
 " Syntax highlighting.
 Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
 
 " File finder.
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Linting and tab completion.
 Plug 'ervandew/supertab'

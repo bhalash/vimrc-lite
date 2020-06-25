@@ -59,9 +59,6 @@ nnoremap <silent><leader>c8 :set colorcolumn=80<CR>
 " Remove fucky quote characters in snippets pasted from Microsoft Word/HTML.
 nnoremap <silent><leader>cj :%s/[‘’]/'/e \| %s/[“”]/"/e<CR>
 
-" Open terminal as full-height vertical split.
-nnoremap <leader>t :vert ter<CR>
-
 " Break up long Typescript import lines and format result.
 nnoremap <leader>im :s/\([{,]\)\s/\1\r  / <Bar> :s/\s}/\r}/<CR>
 
@@ -81,6 +78,10 @@ nnoremap <silent><leader>go :Goyo<CR>
 " ctrlp
 nnoremap <silent><leader>p :CtrlP<CR>
 nnoremap <leader>5 :CtrlPClearCache<CR>
+
+" fzf
+" nnoremap <silent><leader>p :GFiles<CR>
+" nnoremap <silent><leader>f :Files<CR>
 
 " vim-fugitive
 nnoremap <silent><leader>gb :Gblame<CR>
