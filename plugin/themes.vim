@@ -56,5 +56,6 @@ endfunction
 
 augroup themes
   autocmd! ColorScheme hybrid call s:hybrid_patch()
-  colorscheme hybrid
+  " colorscheme hybrid
+  colorscheme hybrid_material
 augroup END

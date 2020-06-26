@@ -23,6 +23,7 @@ Plug 'unblevable/quick-scope'
 Plug 'airblade/vim-rooter'
 
 " Quickly change wrapping characters with cs<char>.
+Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-sort-motion'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-indent'
@@ -67,6 +68,9 @@ Plug 'haya14busa/vim-asterisk'
 
 " Enforce .editorconfig.
 Plug 'editorconfig/editorconfig-vim'
+
+" For nvim
+Plug 'equalsraf/neovim-gui-shim'
 
 call plug#end()
 

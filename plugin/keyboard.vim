@@ -79,9 +79,5 @@ nnoremap <silent><leader>go :Goyo<CR>
 nnoremap <silent><leader>p :CtrlP<CR>
 nnoremap <leader>5 :CtrlPClearCache<CR>
 
-" fzf
-" nnoremap <silent><leader>p :GFiles<CR>
-" nnoremap <silent><leader>f :Files<CR>
-
 " vim-fugitive
 nnoremap <silent><leader>gb :Gblame<CR>
