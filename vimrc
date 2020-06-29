@@ -98,7 +98,7 @@ set autowrite
 set updatecount=50 history=2000 undolevels=2000
 
 " Keep a persistent backup file.
-set undofile undodir=.undo,~/tmp,/tmp
+set undofile undodir=~/.undo,~/tmp,/tmp
 
 " Disable swap files.
 set noswapfile

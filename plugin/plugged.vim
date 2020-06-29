@@ -16,6 +16,10 @@ Plug 'wellle/targets.vim'
 " Provide motion keyed to gs<motion> to sort stuff.
 Plug 'christoomey/vim-sort-motion'
 
+" Text object for current level of indentation.
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+
 " Better FfTt action.
 Plug 'unblevable/quick-scope'
 
@@ -25,8 +29,6 @@ Plug 'airblade/vim-rooter'
 " Quickly change wrapping characters with cs<char>.
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-sort-motion'
-Plug 'kana/vim-textobj-user'
-Plug 'kana/vim-textobj-indent'
 
 " Case-insensitive replacement
 Plug 'tpope/vim-abolish'
@@ -50,6 +52,7 @@ Plug 'mattn/emmet-vim'
 
 " Colorscheme.
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'mcchrish/vim-no-color-collections'
 
 " Syntax highlighting.
 Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }

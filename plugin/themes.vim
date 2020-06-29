@@ -2,7 +2,7 @@
 " Patch: Gitgutter. I like this style for all themes.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! s:gitgutter_reset()
+function! s:gitgutter_patch()
   hi clear LineNr
   hi clear SignColumn
   hi GitGutterAdd           cterm=none    ctermbg=none    ctermfg=46      gui=none      guifg=#00ff00
@@ -16,7 +16,7 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! s:colorsbox_patch()
-  call s:gitgutter_reset()
+  call s:gitgutter_patch()
   hi SpellBad gui=underline,bold guifg=#ff6a6a
   hi TabLineFill guifg=#ffffff guibg=#1d1f21 gui=underline
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
@@ -44,7 +44,7 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! s:hybrid_patch()
-  call s:gitgutter_reset()
+  call s:gitgutter_patch()
   let g:airline_theme = 'hybrid'
   hi Visual guibg=#c0c0c0 guifg=#000000 ctermbg=0 ctermfg=7
   hi CursorLine ctermbg=235 guibg=#4e4e4e
@@ -56,6 +56,7 @@ endfunction
 
 augroup themes
   autocmd! ColorScheme hybrid call s:hybrid_patch()
+  autocmd! ColorScheme hybrid call s:gitgutter_patch()
   " colorscheme hybrid
   colorscheme hybrid_material
 augroup END
