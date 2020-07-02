@@ -59,8 +59,6 @@ Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
 
 " File finder.
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
 
 " Linting and tab completion.
 Plug 'ervandew/supertab'
@@ -72,8 +70,11 @@ Plug 'haya14busa/vim-asterisk'
 " Enforce .editorconfig.
 Plug 'editorconfig/editorconfig-vim'
 
-" For nvim
+" Settings for vim-qt on Windows.
 Plug 'equalsraf/neovim-gui-shim'
+
+" File management.
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -96,28 +97,6 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:goyo_width = 170
 let g:goyo_height = 90
 let g:goyo_linenr = 1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" junegunn/fzf.vim
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Match fzf.vim to colorscheme.
-" See: https://github.com/junegunn/fzf.vim/issues/581
-let g:fzf_colors = {
-      \ "fg":       ["fg", "Normal"],
-      \ "bg":       ["bg", "Normal"],
-      \ "hl":       ["fg", "IncSearch"],
-      \ "fg+":      ["fg", "CursorLine", "CursorColumn", "Normal"],
-      \ "bg+":      ["bg", "CursorLine", "CursorColumn"],
-      \ "hl+":      ["fg", "IncSearch"],
-      \ "info":     ["fg", "IncSearch"],
-      \ "border":   ["fg", "Ignore"],
-      \ "prompt":   ["fg", "Comment"],
-      \ "pointer":  ["fg", "IncSearch"],
-      \ "marker":   ["fg", "IncSearch"],
-      \ "spinner":  ["fg", "IncSearch"],
-      \ "header":   ["fg", "WildMenu"]
-      \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ctrlp/ctrlp.vim

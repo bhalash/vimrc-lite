@@ -21,22 +21,16 @@ function! s:colorsbox_patch()
   hi TabLineFill guifg=#ffffff guibg=#1d1f21 gui=underline
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
   let g:airline_theme = 'colorsbox'
+endfunction
 
-  let g:fzf_colors = {
-        \ "fg":       ["fg", "Normal"],
-        \ "bg":       ["bg", "Normal"],
-        \ "hl":       ["fg", "Error"],
-        \ "fg+":      ["fg", "CursorLine", "CursorColumn", "Normal"],
-        \ "bg+":      ["bg", "CursorLine", "CursorColumn"],
-        \ "hl+":      ["fg", "Error"],
-        \ "info":     ["fg", "IncSearch"],
-        \ "border":   ["fg", "Ignore"],
-        \ "prompt":   ["fg", "Comment"],
-        \ "pointer":  ["fg", "IncSearch"],
-        \ "marker":   ["fg", "IncSearch"],
-        \ "spinner":  ["fg", "IncSearch"],
-        \ "header":   ["fg", "WildMenu"]
-        \ }
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Patch: Ayu Theme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:ayu_patch()
+  hi ColorColumn guibg=#30373d
+  hi Comment guifg=#8293a5
+  hi LineNr guifg=#5c636b
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -55,8 +49,10 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 augroup themes
+  autocmd! ColorScheme ayu call s:ayu_patch()
   autocmd! ColorScheme hybrid call s:hybrid_patch()
   autocmd! ColorScheme hybrid call s:gitgutter_patch()
   " colorscheme hybrid
-  colorscheme hybrid_material
+  " colorscheme hybrid_material
+  colorscheme ayu
 augroup END
