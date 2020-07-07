@@ -73,8 +73,9 @@ Plug 'editorconfig/editorconfig-vim'
 " Settings for vim-qt on Windows.
 Plug 'equalsraf/neovim-gui-shim'
 
-" File management.
+" File navigation.
 Plug 'preservim/nerdtree'
+Plug 'tpope/vim-vinegar'
 
 call plug#end()
 
