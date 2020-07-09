@@ -75,7 +75,10 @@ Plug 'equalsraf/neovim-gui-shim'
 
 " File navigation.
 Plug 'preservim/nerdtree'
-Plug 'tpope/vim-vinegar'
+
+" Because eh?
+Plug 'itchyny/lightline.vim'
+Plug 'yarisgutierrez/ayu-lightline'
 
 call plug#end()
 

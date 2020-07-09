@@ -31,6 +31,8 @@ function! s:ayu_patch()
   hi ColorColumn guibg=#30373d
   hi Comment guifg=#8293a5
   hi LineNr guifg=#5c636b
+  hi Directory guifg=#c4c4c6
+  let g:lightline = { 'colorscheme': 'ayu' }
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

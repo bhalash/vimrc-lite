@@ -19,9 +19,9 @@ nnoremap <leader>sp :setlocal spell!<CR>
 nnoremap <silent><bs> :nohlsearch<CR>
 
 " Use s and S to quickly search and replace in content: sfoo/bar Sfoo/bar.
-nnoremap s :s,,<left>
-nnoremap S :%s,,<left>
-nnoremap <leader>S :%S,,<left>
+" nnoremap s :s,,<left>
+" nnoremap S :%s,,<left>
+" nnoremap <leader>S :%S,,<left>
 
 " git checkout the currently edited file. Useful for scratch work.
 nnoremap <leader>gr :!git checkout %<CR>
