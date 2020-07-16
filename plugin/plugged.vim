@@ -56,6 +56,7 @@ Plug 'mcchrish/vim-no-color-collections'
 
 " Syntax highlighting.
 Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
+Plug 'modille/groovy.vim', { 'for': 'groovy' }
 
 " File finder.
 Plug 'ctrlpvim/ctrlp.vim'
