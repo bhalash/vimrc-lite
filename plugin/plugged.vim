@@ -81,9 +81,6 @@ Plug 'equalsraf/neovim-gui-shim'
 " File navigation.
 Plug 'preservim/nerdtree'
 
-" Task list, because I have nothing else available at work. :(
-Plug 'vuciv/vim-bujo'
-
 " Because eh?
 Plug 'itchyny/lightline.vim'
 Plug 'yarisgutierrez/ayu-lightline'
