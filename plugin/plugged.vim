@@ -5,7 +5,7 @@
 filetype off
 
 if has('nvim')
-  call plug#begin(stpath('config') . '/extensions')
+  call plug#begin(stdpath('config') . '/extensions')
 else
   call plug#begin('$HOME/.vim/extensions')
 endif
