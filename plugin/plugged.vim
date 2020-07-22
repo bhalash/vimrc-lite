@@ -77,6 +77,9 @@ Plug 'equalsraf/neovim-gui-shim'
 " File navigation.
 Plug 'preservim/nerdtree'
 
+" Task list, because I have nothing else available at work. :(
+Plug 'vuciv/vim-bujo'
+
 " Because eh?
 Plug 'itchyny/lightline.vim'
 Plug 'yarisgutierrez/ayu-lightline'
@@ -118,3 +121,11 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 " Search from folder with .git
 let g:ctrlp_working_path_mode = 'ra'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vuciv/vim-bujo
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:bujo#todo_file_path = $HOME . '/.cache/bujo'
+let g:bujo#window_width = 50
+
