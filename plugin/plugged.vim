@@ -4,7 +4,11 @@
 
 filetype off
 
-call plug#begin('$HOME/.vim/extensions')
+if has('nvim')
+  call plug#begin(stpath('config') . '/extensions')
+else
+  call plug#begin('$HOME/.vim/extensions')
+endif
 
 " RAWEAJEFLSEFASLefSJEFSefsef DEATH TO WHITESPACES
 Plug 'bronson/vim-trailing-whitespace'
@@ -126,6 +130,4 @@ let g:ctrlp_working_path_mode = 'ra'
 " vuciv/vim-bujo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:bujo#todo_file_path = $HOME . '/.cache/bujo'
 let g:bujo#window_width = 50
-
